@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vue-js</title>
+</head>
+<body>
+  <div id="app">
+    <input type="text" placeholder="Inserisci il titolo" @keyUp.enter="upTastoEnter" @keyUp="upTasto" v-model="titolo">
+    <h1 class="titolo_h1" :class="miaClass">
+      {{titolo}}
+    </h1>
+    <div class="bottoni">
+      <button @click="cambioClasse('green')">verde</button>
+      <button @click="cambioClasse('red')">rosso</button>
+    </div>   
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

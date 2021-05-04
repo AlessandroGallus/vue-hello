@@ -1,0 +1,33 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+body{
+  background-color: aquamarine;
+}
+button{
+  padding:5px;
+}
+h1{
+  padding:10px 0;
+}
+#app{
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+input{
+  width: 200px;
+  height:40px;
+  border-radius: 8px;
+  border:0;
+  text-align: center;
+}
+.red{
+  color:#ff0000;
+}
+.green{
+  color:#00ff00;
+}
